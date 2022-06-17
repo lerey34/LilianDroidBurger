@@ -21,16 +21,12 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import fr.isen.rey.liliandroidburger.R
 import fr.isen.rey.liliandroidburger.UserPreferences
 import fr.isen.rey.liliandroidburger.logic.ConfirmerScreen
-import fr.isen.rey.liliandroidburger.logic.ViewInfo
-import fr.isen.rey.liliandroidburger.logic.burger
-import fr.isen.rey.liliandroidburger.logic.time
 import fr.isen.rey.liliandroidburger.ui.theme.Dark
 import fr.isen.rey.liliandroidburger.ui.theme.Gold
 import fr.isen.rey.liliandroidburger.ui.theme.Light

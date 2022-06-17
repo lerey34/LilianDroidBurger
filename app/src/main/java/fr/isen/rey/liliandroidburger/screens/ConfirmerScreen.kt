@@ -2,36 +2,29 @@ package fr.isen.rey.liliandroidburger.logic
 
 import android.content.Intent
 import android.net.Uri
-import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.*
+import androidx.compose.material.Button
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.*
-import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
-import androidx.compose.ui.draw.blur
-import androidx.compose.ui.draw.shadow
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat.startActivity
 import fr.isen.rey.liliandroidburger.R
 import fr.isen.rey.liliandroidburger.UserPreferences
-import fr.isen.rey.liliandroidburger.ui.theme.*
-import kotlinx.coroutines.launch
+import fr.isen.rey.liliandroidburger.ui.theme.Dark
+import fr.isen.rey.liliandroidburger.ui.theme.GoldBlur
+import fr.isen.rey.liliandroidburger.ui.theme.Light
+import fr.isen.rey.liliandroidburger.ui.theme.Shaddow
 
 var address: String = ""
 var phone: String = ""
@@ -103,7 +96,6 @@ fun ViewInfo() {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                val userName = dataStore.getuserName.collectAsState(initial = "")
                 Text(text = address, fontSize = 20.sp, color = Dark, modifier = Modifier.width(200.dp).heightIn(min = 30.dp, max = 80.dp))
                 Image(painter = painterResource(id = R.drawable.adress_conf), contentDescription = "address", Modifier.size(50.dp, 50.dp))
             }
@@ -120,7 +112,6 @@ fun ViewInfo() {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                val userName = dataStore.getuserName.collectAsState(initial = "")
                 Text(text = phone, fontSize = 20.sp, color = Dark, modifier = Modifier.width(200.dp).heightIn(min = 30.dp, max = 80.dp))
                 Image(painter = painterResource(id = R.drawable.phone_conf), contentDescription = "phone", Modifier.size(50.dp, 50.dp))
             }
@@ -137,7 +128,6 @@ fun ViewInfo() {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                val userName = dataStore.getuserName.collectAsState(initial = "")
                 Text(text = burger, fontSize = 20.sp, color = Dark, modifier = Modifier.width(200.dp).heightIn(min = 30.dp, max = 80.dp))
                 Image(painter = painterResource(id = R.drawable.burgerpng_conf), contentDescription = "burger", Modifier.size(50.dp, 50.dp))
             }
@@ -154,7 +144,6 @@ fun ViewInfo() {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                val userName = dataStore.getuserName.collectAsState(initial = "")
                 Text(text = time, fontSize = 20.sp, color = Dark, modifier = Modifier.width(200.dp).heightIn(min = 30.dp, max = 80.dp))
                 Image(painter = painterResource(id = R.drawable.time_conf), contentDescription = "clock", Modifier.size(50.dp, 50.dp))
             }

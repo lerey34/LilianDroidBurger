@@ -1,6 +1,6 @@
 package fr.isen.rey.liliandroidburger
 
-import android.telephony.TelephonyManager
+/* NOT USE YET */
 
 class Country(
     val nameCode: String,
