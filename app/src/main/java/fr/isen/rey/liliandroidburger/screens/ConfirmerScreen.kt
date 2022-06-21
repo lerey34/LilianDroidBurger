@@ -221,7 +221,7 @@ fun ViewInfo() {
                 }
                 val intent = Intent(Intent.ACTION_SENDTO).apply {
                     setData(Uri.parse("mailto:marc.mollinari@gmail.com"))
-                    putExtra(Intent.EXTRA_EMAIL, "nailil2503@gmail.com")
+                    putExtra(Intent.EXTRA_EMAIL, "marc.mollinari@gmail.com")
                     putExtra(Intent.EXTRA_SUBJECT, "Confirmation commande")
                     putExtra(Intent.EXTRA_TEXT, "Votre commande a bien été enregistrée")
                 }
