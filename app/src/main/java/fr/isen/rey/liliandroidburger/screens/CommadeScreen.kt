@@ -284,7 +284,7 @@ fun CommandeScreen(navController: NavController){
                         .height(100.dp)
                         .padding(top = 20.dp)
                 ) {
-                    Text(text = "Commander")
+                    Text(text = "Commander", color = Dark)
                 }
             }
         }

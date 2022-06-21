@@ -234,7 +234,7 @@ fun ViewInfo() {
                         .height(100.dp)
                         .padding(top = 20.dp)
                 ) {
-                    Text(text = "Confirmation par email")
+                    Text(text = "Confirmation par email", color = Dark)
                 }
             }
         }
